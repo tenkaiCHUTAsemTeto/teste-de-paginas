@@ -1,0 +1,64 @@
+body {
+    background-color: #000; /* Fundo escuro para destacar o neon */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.neon-bar {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00); /* Gradiente colorido */
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 15px #ff00ff,
+        0 0 20px #00ffff,
+        0 0 35px #00ffff,
+        0 0 40px #00ffff,
+        0 0 50px #00ffff,
+        0 0 75px #00ffff; /* Efeito de brilho neon */
+    animation: glow 2s ease-in-out infinite alternate; /* Animação pulsante */
+}
+
+.neon-bar h1 {
+    color: #fff;
+    font-size: 2em;
+    margin: 0;
+    text-shadow: 
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 15px #ff00ff,
+        0 0 20px #00ffff; /* Brilho no texto */
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 
+            0 0 5px #ff00ff,
+            0 0 10px #ff00ff,
+            0 0 15px #ff00ff,
+            0 0 20px #00ffff,
+            0 0 35px #00ffff,
+            0 0 40px #00ffff,
+            0 0 50px #00ffff,
+            0 0 75px #00ffff;
+    }
+    to {
+        box-shadow: 
+            0 0 10px #ff00ff,
+            0 0 20px #ff00ff,
+            0 0 30px #ff00ff,
+            0 0 40px #00ffff,
+            0 0 70px #00ffff,
+            0 0 80px #00ffff,
+            0 0 100px #00ffff,
+            0 0 150px #00ffff;
+    }
+}
