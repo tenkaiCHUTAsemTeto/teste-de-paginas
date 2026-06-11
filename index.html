@@ -1,140 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação - Tenakai</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        .neon-text {
-            font-size: 2.5em;
-            color: #73008a;
-            text-shadow: 
-                0 0 5px #000000,
-                0 0 10px #000000,
-                0 0 15px #000000,
-                0 0 20px #000000,
-                0 0 25px #000000;
-            animation: flicker 1.5s infinite alternate;
-            margin: 0;
-            padding: 20px 0;
-        }
-        @keyframes flicker {
-            0% { opacity: 1; }
-            50% { opacity: 0.9; }
-            100% { opacity: 0.8; }
-        }
-        .banner {
-            width: 100%;
-            height: 200px;
-            background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjd6YTJsdzdldGprcDJzcml6Y3JpOHRxbTR4ZnRxbWk5cmNtNWVnMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/V69LhUggYIg6qmKUoD/200.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin: 20px 0 20px 0;
-            border-radius: 10px;
-        }
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-        }
-        img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin: 20px 0;
-        }
-        hr {
-            border: 1px solid #b705d3;
-            margin: 40px 0;
-        }
-        .music-player {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: linear-gradient(135deg, #b705d3, #7b2cbf);
-            padding: 15px 25px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            box-shadow: 0 0 15px #b705d3, 0 0 30px rgba(183, 5, 211, 0.5);
-            z-index: 9999;
-        }
-        .music-player button {
-            background: rgba(255, 255, 255, 0.2);
-            border: 2px solid #00ff00;
-            border-radius: 50%;
-            width: 45px;
-            height: 45px;
-            cursor: pointer;
-            font-size: 1.3em;
-            transition: all 0.3s ease;
-        }
-        .music-player button:hover {
-            background: #00ff00;
-            box-shadow: 0 0 20px #00ff00;
-        }
-        .music-player .music-title {
-            font-size: 0.8em;
-            color: #00ff00;
-            font-weight: bold;
-        }
-        .music-player .music-status {
-            font-size: 0.7em;
-            color: #fff;
-            opacity: 0.8;
-        }
-        .progress-container {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: rgba(255, 255, 255, 0.1);
-            z-index: 9998;
-            cursor: pointer;
-        }
-        .progress-bar {
-            height: 100%;
-            background: linear-gradient(90deg, #b705d3, #00ff00);
-            width: 0%;
-            transition: width 0.1s linear;
-            box-shadow: 0 0 10px #00ff00;
-        }
-        .tela-inicio {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background: #000000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 99999;
-            cursor: pointer;
-        }
-        .tela-inicio h1 {
-            color: #b705d3;
-            font-size: 4em;
-            margin: 0;
-            text-shadow: 0 0 30px #b705d3;
-        }
-        .tela-inicio p {
-            color: #ffffff;
-            font-size:
+    <title>Novo Produto | Sua Marca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">SUA MARCA</div>
+                <a href="#oferta" class="btn btn-small">Comprar Agora</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">NOVO LANÇAMENTO</span>
+                <h1>O Produto Que Vai Revolucionar Seu Dia a Dia</h1>
+                <p>A solução definitiva para seu problema. Mais eficiência, menos esforço e design moderno.</p>
+                <div class="hero-buttons">
+                    <a href="#oferta" class="btn">Quero Garantir O Meu</a>
+                    <a href="#features" class="btn btn-outline">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Substitua pela imagem do seu produto -->
+                <div class="image-placeholder">
+                    <span>📷 FOTO DO PRODUTO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Por que escolher o produto?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>Super Rápido</h3>
+                    <p>Descrição do benefício principal que resolve o problema do cliente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Durável</h3>
+                    <p>Material de alta qualidade que garante longa duração.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🎨</div>
+                    <h3>Design Moderno</h3>
+                    <p>Visual elegante que combina com seu estilo de vida.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">💰</div>
+                    <h3> Melhor Custo-Benefício</h3>
+                    <p>Preço justo com qualidade premium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que estão dizendo?</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Produto incrível! Exatamente o que eu precisava. Recomendo!"</p>
+                    <span class="author">- Maria Santos</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Entrega rápida e produto de excelente qualidade."</p>
+                    <span class="author">- João Silva</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Super valeu a pena. Já indiquei para amigos."</p>
+                    <span class="author">- Pedro Oliveira</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-section" id="oferta">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Oferta de Lançamento</h2>
+                <p class="old-price">De <s>R$ 497</s></p>
+                <p class="new-price">Por apenas <span>R$ 297</span></p>
+                <ul class="benefits-list">
+                    <li>✅ Produto Original</li>
+                    <li>✅ Frete Grátis Brasil</li>
+                    <li>✅ Garantia de 30 dias</li>
+                    <li>✅ Pagamento Seguro</li>
+                </ul>
+                <a href="#" class="btn btn-large">Comprar Agora</a>
+                <p class="secure-payment">🔒 Pagamento 100% Seguro</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Sua Empresa Ltda. Todos os direitos reservados.</p>
+            <p class="company-info">CNPJ: 00.000.000/0000-00 | contato@suamarca.com.br</p>
+        </div>
+    </footer>
+
+</body>
+</html>
